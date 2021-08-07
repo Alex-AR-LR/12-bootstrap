@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/custom.css">
+
+<body>
+  <div class="container-fluid">
+    <header class="row header ff-josefin">
+      <div class="col-12 col-xxl-8 mx-xxl-auto py-4 py-xxl-5 d-flex flex-column">
+
+        <div class="row d-flex align-items-center">
+          <div class="col-auto me-auto">
+            <img class="w-100" src="images/logo.svg" alt="logo">
+          </div>
+
+          <nav class="col-auto d-none d-xxl-block">
+            <ul class="list-unstyled d-flex justify-content-between m-0">
+              <li><a class="text-decoration-none text-white d-inline-block p-2 mx-2 fs-6 fw-bold links" href="#">About</a></li>
+              <li><a class="text-decoration-none text-white d-inline-block p-2 mx-2 fs-6 fw-bold links" href="#">Careers</a></li>
+              <li><a class="text-decoration-none text-white d-inline-block p-2 mx-2 fs-6 fw-bold links" href="#">Events</a></li>
+              <li><a class="text-decoration-none text-white d-inline-block p-2 mx-2 fs-6 fw-bold links" href="#">Products</a></li>
+              <li><a class="text-decoration-none text-white d-inline-block p-2 mx-2 fs-6 fw-bold links" href="#">Support</a></li>
+            </ul>
+          </nav>
+
+          <div class="col-auto d-xxl-none">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample">
+              <img src="images/icon-hamburger.svg" alt="logo-burger">
+            </button>
+          </div>
+        </div>
+
+        <div class="row my-auto px-3">
+          <div class="col border border-2 p-3 col-md-8 p-md-4 col-lg-6 col-xxl-5">
+            <h1 class="text-white text-uppercase m-0">Immersive experiences that deliver</h1>
+          </div>
+        </div>
+
+        <div class="row d-xxl-none">
+          <div class="col-12">
+
+            <div class="offcanvas offcanvas-start bg-dark p-4 w-100" tabindex="-1" id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header p-1">
+                <div class="col-auto me-auto">
+                  <img class="w-75 offcanvas-title" id="offcanvasExampleLabel" src="images/logo.svg" alt="logo">
+                </div>
+                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+
+              <nav class="row my-auto">
+                <ul class="list-unstyled col-12">
+                  <li><a class="text-decoration-none text-white py-2 d-inline-block fs-1 text-uppercase"
+                      href="#">About</a></li>
+                  <li><a class="text-decoration-none text-white py-2 d-inline-block fs-1 text-uppercase"
+                      href="#">Careers</a></li>
+                  <li><a class="text-decoration-none text-white py-2 d-inline-block fs-1 text-uppercase"
+                      href="#">Events</a></li>
+                  <li><a class="text-decoration-none text-white py-2 d-inline-block fs-1 text-uppercase"
+                      href="#">Products</a></li>
+                  <li><a class="text-decoration-none text-white py-2 d-inline-block fs-1 text-uppercase"
+                      href="#">Support</a></li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <article class="row">
+      <div class="col-12 col-xxl-8 mx-xxl-auto p-3 my-5">
+
+        <div class="row g-0 position-relative">
+
+          <div class="col-12 col-lg-8">
+            <img src="images/mobile/image-interactive.jpg" class="img-fluid w-100 d-md-none" alt="vr-usage">
+            <img src="images/desktop/image-interactive.jpg" class="img-fluid w-100 d-none d-md-block" alt="vr-usage">
+          </div>
+          
+
+
+          <div class="col-12 bg-white">
+            <div class="text-center px-3 py-4 bg-white text-lg-start ps-lg-5 pe-lg-0 pb-lg-0 pt-lg-5 card-absolute">
+              <h2 class="card-title text-uppercase fw-normal mb-3">The leader in interactive VR</h2>
+              <p class="card-text ff-alata card-absolute-paragraph">Founded in 2011, Loopstudios has been producing world-class virtual reality
+                projects for some of the best companies around the globe. Our award-winning
+                creations have transformed businesses through digital experiences that bind
+                to their brand.</p>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </article>
+
+    <section class="row p-3 ff-josefin">
+      <div class="col-12 col-xxl-8 mx-xxl-auto mb-lg-5"> 
+        <div class="row">
+          <div class="col-12 col-lg-auto text-center mb-4 order-lg-0">
+            <h3 class="text-uppercase fs-1 ls-5">Our creations</h3>
+          </div>
+          <div class="col-12 g-0 order-lg-2">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col position-relative ani">
+                <img class="shadow img-fluid d-lg-none transition-img" src="images/mobile/image-deep-earth.jpg" alt="earth">
+                <img class="shadow-lg img-fluid w-100 d-none d-lg-inline-block transition-img" src="images/desktop/image-deep-earth.jpg" alt="earth">
+                <span class="text-white text-uppercase bottom-10 fs-4 lh-1 position-absolute start-0 ms-4 w-25 transition-span">Deep earth</span>
+              </div>
+              <div class="col position-relative ani">
+                <img class="shadow img-fluid d-lg-none transition-img" src="images/mobile/image-night-arcade.jpg" alt="game">
+                <img class="shadow-lg img-fluid w-100 d-none d-lg-inline-block transition-img" src="images/desktop/image-night-arcade.jpg" alt="game">
+                <span class="text-white text-uppercase bottom-10 fs-4 lh-1 position-absolute start-0 ms-4 w-25 transition-span">Night arcade</span>
+              </div>
+              <div class="col position-relative ani">
+                <img class="shadow img-fluid d-lg-none transition-img" src="images/mobile/image-soccer-team.jpg" alt="football">
+                <img class="shadow-lg img-fluid w-100 d-none d-lg-inline-block transition-img" src="images/desktop/image-soccer-team.jpg" alt="football">
+                <span class="text-white text-uppercase bottom-10 fs-4 lh-1 position-absolute start-0 ms-4 w-25 transition-span">Soccer team VR</span>
+              </div>
+              <div class="col position-relative ani">
+                <img class="shadow img-fluid d-lg-none transition-img" src="images/mobile/image-grid.jpg" alt="racing">
+                <img class="shadow-lg img-fluid w-100 d-none d-lg-inline-block transition-img" src="images/desktop/image-grid.jpg" alt="racing">
+                <span class="text-white text-uppercase bottom-10 fs-4 lh-1 position-absolute start-0 ms-4 w-25 transition-span">The grid</span>
+              </div>
+              <div class="col position-relative ani">
+                <img class="shadow img-fluid d-lg-none transition-img" src="images/mobile/image-from-above.jpg" alt="street">
+                <img class="shadow-lg img-fluid w-100 d-none d-lg-inline-block transition-img" src="images/desktop/image-from-above.jpg" alt="street">
+                <span class="text-white text-uppercase bottom-10 fs-4 lh-1 position-absolute start-0 ms-4 w-25 transition-span">From up above VR</span>
+              </div>
+              <div class="col position-relative ani">
+                <img class="shadow img-fluid d-lg-none transition-img" src="images/mobile/image-pocket-borealis.jpg" alt="borealis">
+                <img class="shadow-lg img-fluid w-100 d-none d-lg-inline-block transition-img" src="images/desktop/image-pocket-borealis.jpg" alt="borealis">
+                <span class="text-white text-uppercase bottom-10 fs-4 lh-1 position-absolute start-0 ms-4 w-25 transition-span">Pocket borealis</span>
+              </div>
+              <div class="col position-relative ani">
+                <img class="shadow img-fluid d-lg-none transition-img" src="images/mobile/image-curiosity.jpg" alt="curiosity">
+                <img class="shadow-lg img-fluid w-100 d-none d-lg-inline-block transition-img" src="images/desktop/image-curiosity.jpg" alt="curiosity">
+                <span class="text-white text-uppercase bottom-10 fs-4 lh-1 position-absolute start-0 ms-4 w-25 transition-span">The curiosity</span>
+              </div>
+              <div class="col position-relative ani">
+                <img class="shadow img-fluid d-lg-none transition-img" src="images/mobile/image-fisheye.jpg" alt="fisheye">
+                <img class="shadow-lg img-fluid w-100 d-none d-lg-inline-block transition-img" src="images/desktop/image-fisheye.jpg" alt="fisheye">
+                <span class="text-white text-uppercase bottom-10 fs-4 lh-1 position-absolute start-0 ms-4 w-25 transition-span">Make it fisheye</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2 order-lg-1 mx-auto mx-lg-0 mt-4 mt-lg-0 ms-lg-auto">
+            <a class="btn btn-outline-dark rounded-0 border-2 ff-alata text-uppercase ls-5 w-100" href="#">See all</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="row ff-alata mt-5 footer">
+      <div class="col col-xxl-8 mx-lg-auto py-5">
+        <div class="row">
+          <div class="col-12 text-center mb-4 col-lg-10 text-lg-start order-lg-0 mb-lg-0 me-lg-auto">
+            <img src="images/logo.svg" alt="logo">
+          </div>
+
+          <nav class="col-12 text-center order-lg-3 col-lg-auto mt-lg-3 align-self-lg-center">
+            <ul class="list-unstyled d-lg-flex d-lg-grid gap-5 m-lg-0">
+              <li><a class="text-decoration-none text-white py-2 d-inline-block fs-6 links"
+                  href="#">About</a></li>
+              <li><a class="text-decoration-none text-white py-2 d-inline-block fs-6 links"
+                  href="#">Careers</a></li>
+              <li><a class="text-decoration-none text-white py-2 d-inline-block fs-6 links"
+                  href="#">Events</a></li>
+              <li><a class="text-decoration-none text-white py-2 d-inline-block fs-6 links"
+                  href="#">Products</a></li>
+              <li><a class="text-decoration-none text-white py-2 d-inline-block fs-6 links"
+                  href="#">Support</a></li>
+            </ul>
+          </nav>
+
+          <div class="col-6 mx-auto d-flex justify-content-between mt-3 py-1 col-lg-2 order-lg-1 mx-lg-0 mt-lg-0">
+            <a class="links links--100 pb-1" href="#"><img src="images/icon-facebook.svg" alt="facebook-icon"></a>
+            <a class="links links--100 pb-1" href="#"><img src="images/icon-twitter.svg" alt="twitter-icon"></a>
+            <a class="links links--100 pb-1" href="#"><img src="images/icon-pinterest.svg" alt="pinteres-icon"></a>
+            <a class="links links--100 pb-1" href="#"><img src="images/icon-instagram.svg" alt="instagram-icon"></a>
+          </div>
+
+          <div class="col-12 mt-3 mt-lg-3 align-self-lg-center order-lg-4 col-lg-4 col-xxl-5 ms-lg-auto">
+            <p class="text-center text-lg-end text-white-50 fs-6 m-lg-0">© 2021 Loopstudios. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="attribution text-white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Exequiel Flores</a>.
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

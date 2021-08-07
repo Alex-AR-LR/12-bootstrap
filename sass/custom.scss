@@ -1,0 +1,100 @@
+/* Variables */
+$White: hsl(0, 0%, 100%);
+$Black: hsl(0, 0%, 0%);
+$Dark-Gray: hsl(0, 0%, 55%);
+$Very-Dark-Gray: hsl(0, 0%, 41%);
+
+
+.header{
+    background: url(../images/mobile/image-hero.jpg) no-repeat center/cover;
+    min-height: 700px;
+    transition: background 350ms ease;
+}
+
+.ff-alata{
+    font-family: 'Alata', sans-serif;
+}
+
+.ff-josefin{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.ls-5{
+    letter-spacing: 2px;
+}
+
+.bottom-10{
+    bottom: 10%;
+}
+
+.card-absolute-paragraph{
+    color: $Dark-Gray;
+}
+
+.footer,
+.attribution{
+    background-color: $Black;
+}
+
+.links{
+    position:  relative;
+
+    &::after{
+        content: '';
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        height: 2px;
+        width: 0;
+        margin: 0 auto;
+        background: white;
+        transition: width 350ms ease;
+    }
+
+    &:hover{
+        &::after{
+            width: 40%;
+        }
+    }
+}
+
+.links--100{
+    &:hover{
+        &::after{
+            width: 100%;
+        }
+    }
+}
+
+.transition-img{
+    transition: filter 350ms ease;
+}
+
+.transition-span{
+    transition: color 350ms ease;
+}
+
+.ani{
+    cursor: pointer;
+    &:hover > img{
+        filter: opacity(.5);
+    }
+
+    &:hover > span{
+        color: black !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header{
+        background: url(../images/desktop/image-hero.jpg) no-repeat top/cover;
+        min-height: 650px;
+    }
+    .card-absolute{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 500px;
+    }
+}
